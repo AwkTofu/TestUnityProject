@@ -4,20 +4,18 @@ using UnityEngine;
 
 public class UpdateVsFixed : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    static int TARGET_FRAME_RATE = 10;
+    void Awake()
     {
-        Application.targetFrameRate = 10;
+        QualitySettings.vSyncCount = 0;
+        Application.targetFrameRate = TARGET_FRAME_RATE;
     }
-
-    void FixedUpdate()
-    {
-        Debug.Log("FixedUpdate: " + Time.deltaTime);
-        Debug.Log("FixedUpdate: " + Time.fixedDeltaTime);
-    }
-    // Update is called once per frame
     void Update()
     {
-        //Debug.Log("Update: " + Time.deltaTime);
+        Debug.Log("Update Called");
+    }
+    void FixedUpdate()
+    {
+        Debug.Log("FixedUpdate Called");
     }
 }
