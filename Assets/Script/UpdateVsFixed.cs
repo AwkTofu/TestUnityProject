@@ -10,9 +10,13 @@ public class UpdateVsFixed : MonoBehaviour
         
     }
 
+    void FixedUpdate()
+    {
+        Debug.Log("FixedUpdate: " + Time.deltaTime);
+    }
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log("Update: " + Time.deltaTime);
     }
 }
