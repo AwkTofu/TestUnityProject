@@ -7,7 +7,7 @@ public class UpdateVsFixed : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Application.targetFrameRate = 10;
     }
 
     void FixedUpdate()
