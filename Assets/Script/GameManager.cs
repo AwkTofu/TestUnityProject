@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
 
-    private int randomNumber = Random.Range(0, 100);
+    private int randomNumber = 5;
     void Awake()
     {
         if (instance == null)
@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
         }
 
         DontDestroyOnLoad(gameObject);
+
     }
 
     // Update is called once per frame
