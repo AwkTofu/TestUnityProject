@@ -5,16 +5,10 @@ using UnityEngine;
 public class StaticVar : MonoBehaviour
 {
     // Start is called before the first frame update
-    public static float num= 2;
-    public static string txt = "Hello World";
+    public static float num = 0;
 
     void Update()
     {
-        num += (Time.deltaTime * 1.5f);   
-
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            Debug.Log(num);
-        }
+        num += Time.deltaTime;
     }
 }
