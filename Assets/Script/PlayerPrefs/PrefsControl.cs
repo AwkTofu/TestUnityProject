@@ -9,6 +9,6 @@ public class PrefsControl : MonoBehaviour
     }
 
     public float GetFloatPlayerPrefs(){
-        return PlayerPrefs.GetFloat("test_float", 0)); 
+        return PlayerPrefs.GetFloat("test_float", 0);
     }
 }
