@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class PrefsControl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public void SetFloatPlayerPrefs(float value){
+        PlayerPrefs.SetFloat("test_float", value);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public float GetFloatPlayerPrefs(){
+        return PlayerPrefs.GetFloat("test_float", 0)); 
     }
 }
