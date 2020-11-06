@@ -27,4 +27,10 @@ public class RigidbodyMovement : MonoBehaviour
     void moveCharacter(Vector2 direction) {
         rb.AddForce(direction * speed);
     }
+    void moveCharacterVelocity(Vector2 direction) {
+        rb.velocity = direction * speed;
+    }
+    void moveCharacterMovePosition(Vector2 direction) {
+        rb.MovePosition((Vector2)transform.position + (direction * speed * Time.deltaTime));
+    }
 }
