@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class SqrObj : MonoBehaviour
 {
+    public static int num = 0;
     void Awake()
     {
-        Debug.Log("Cube: Test in Awake ");
+        num = 1;
+        Debug.Log("Cube: Test in Awake | Sphere Num is " + SphereObj.num);
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Cube: Test in Start ");
+        num = 2;
+        Debug.Log("Cube: Test in Start | Sphere Num is " + SphereObj.num);
     }
 
 
