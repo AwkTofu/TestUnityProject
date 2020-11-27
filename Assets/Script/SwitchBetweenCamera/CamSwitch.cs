@@ -23,7 +23,7 @@ public class CamSwitch : MonoBehaviour
             cam2.SetActive(true);
             cam3.SetActive(false);
         }
-        if (Input.GetButtonDown("Switch2"))
+        if (Input.GetButtonDown("Switch3"))
         {
             cam1.SetActive(false);
             cam2.SetActive(false);
