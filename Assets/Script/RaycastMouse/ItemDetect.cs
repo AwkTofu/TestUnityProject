@@ -6,7 +6,6 @@ public class ItemDetect : MonoBehaviour
 {
     Ray ray;
     RaycastHit hit;
-    public int number = 0;
     public GameObject Target;
 
     // Start is called before the first frame update
@@ -15,7 +14,6 @@ public class ItemDetect : MonoBehaviour
         //Initialise Ray
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         // Print out the current number value to the console window
-         Debug.Log("Number is currently: " + number); 
     }
 
     // Update is called once per frame
